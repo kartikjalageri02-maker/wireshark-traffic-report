@@ -1,0 +1,51 @@
+========================================
+       WIRESHARK TRAFFIC REPORT
+========================================
+Date: Monday 23 November 2026 10:44:38 AM IST
+
+1. TOTAL PACKETS
+59
+
+2. PROTOCOL HIERARCHY
+
+===================================================================
+Protocol Hierarchy Statistics
+Filter: 
+
+frame                                    frames:59 bytes:18312
+  eth                                    frames:59 bytes:18312
+    arp                                  frames:4 bytes:240
+    ip                                   frames:55 bytes:18072
+      udp                                frames:4 bytes:697
+        dns                              frames:4 bytes:697
+      tcp                                frames:51 bytes:17375
+        tls                              frames:16 bytes:8041
+===================================================================
+
+3. IP ENDPOINT STATISTICS
+================================================================================
+IPv4 Endpoints
+Filter:<No Filter>
+                       | Packets | |  Bytes  | | Tx Packets | | Tx Bytes | | Rx Packets | | Rx Bytes |
+192.168.28.128                 55   18 kB              24      5,012 bytes         31      13 kB       
+150.171.27.10                  35   15 kB              19      11 kB               16      4,379 bytes 
+150.171.110.84                  7   522 bytes           4      297 bytes            3      225 bytes   
+20.85.17.170                    5   282 bytes           2      120 bytes            3      162 bytes   
+192.168.28.2                    4   697 bytes           4      697 bytes            0      0 bytes     
+150.171.110.87                  4   870 bytes           2      624 bytes            2      246 bytes   
+================================================================================
+
+4. IP CONVERSATION STATISTICS
+================================================================================
+IPv4 Conversations
+Filter:<No Filter>
+                                               |       <-      | |       ->      | |     Total     |    Relative    |   Duration   |
+                                               | Frames  Bytes | | Frames  Bytes | | Frames  Bytes |      Start     |              |
+192.168.28.128       <-> 150.171.27.10             19 11 kB          16 4,379 bytes      35 15 kB         0.434987685         1.2658
+150.171.110.84       <-> 192.168.28.128             3 225 bytes       4 297 bytes       7 522 bytes     2.537801619         0.0030
+192.168.28.128       <-> 20.85.17.170               2 120 bytes       3 162 bytes       5 282 bytes     2.405650422         1.2805
+192.168.28.2         <-> 192.168.28.128             0 0 bytes         4 697 bytes       4 697 bytes     0.432766677         0.0013
+192.168.28.128       <-> 150.171.110.87             2 624 bytes       2 246 bytes       4 870 bytes     1.587086130         0.1030
+================================================================================
+
+========== END OF REPORT ==========
